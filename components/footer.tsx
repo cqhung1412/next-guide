@@ -4,7 +4,10 @@ import Link from "next/link";
 export default function Footer(props: any) {
   return (
     <footer className={props.className}>
-      <Link href="/about">
+      <Link href="/meals">Meals</Link>
+      <Link href="/meals/share">Share meal</Link>
+      <Link href="/community">Community</Link>
+      {/* <Link href="/about">
         <Image
           aria-hidden
           src="/vercel.svg"
@@ -23,7 +26,7 @@ export default function Footer(props: any) {
           height={16}
         />
         Our blogs
-      </Link>
+      </Link> */}
     </footer>
   )
 }
