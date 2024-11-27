@@ -1,10 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "./footer.module.css";
 
-export default function Footer() {
+export default function Footer(props: any) {
   return (
-    <footer className={styles.footer}>
+    <footer className={props.className}>
       <Link href="/about">
         <Image
           aria-hidden
@@ -15,11 +14,7 @@ export default function Footer() {
         />
         About us
       </Link>
-      <a
-        href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
+      <Link href="/blog">
         <Image
           aria-hidden
           src="/file.svg"
@@ -27,8 +22,8 @@ export default function Footer() {
           width={16}
           height={16}
         />
-        Learn
-      </a>
+        Our blogs
+      </Link>
     </footer>
   )
 }
