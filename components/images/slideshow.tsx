@@ -29,9 +29,10 @@ function shuffle(arr: any[]) {
     .map(({ value }) => value)
 }
 
+const imageList = shuffle(images)
+
 export default function Slideshow() {
   const [currIndex, setCurrIndex] = useState(0)
-  const imageList = shuffle(images)
 
   useEffect(() => {
     const interval = setInterval(() => {
