@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import styles from "./page.module.css"
+import classes from "./layout.module.css"
 import Footer from "@/components/footer/footer";
 import Header from "@/components/header/header";
 
@@ -29,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
-        <div className={styles.page}>
+        <div className={classes.page}>
           <Header />
-          <main className={styles.main}>
+          <main className={classes.main}>
             {children}
           </main>
           <Footer />

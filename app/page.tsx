@@ -1,8 +1,50 @@
-import styles from "./page.module.css";
-import Header from "@/components/header/header";
+import Link from "next/link";
+import classes from "./page.module.css";
+import Slideshow from "@/components/images/slideshow";
 
 export default function Home() {
   return (
-    <h1>The Home</h1>
+    <main>
+      <section className={classes['main-section']}>
+        <div className={classes.slideshow}>
+          <Slideshow />
+        </div>
+        <div>
+          <div className={classes.hero}>
+            <h1>NextLevel Food for NextLevel Foodies</h1>
+            <p>Taste & share food from all over the world.</p>
+          </div>
+          <div className={classes.ctas}>
+            <Link href="/community">Join the Community</Link>
+            <Link href="/meals">Explore Meals</Link>
+          </div>
+        </div>
+      </section>
+      <section className={classes.section}>
+        <h2>How it works</h2>
+        <p>
+          NextLevel Food is a platform for foodies to share their favorite
+          recipes with the world. It&apos;s a place to discover new dishes, and to
+          connect with other food lovers.
+        </p>
+        <p>
+          NextLevel Food is a place to discover new dishes, and to connect
+          with other food lovers.
+        </p>
+      </section>
+
+      <section className={classes.section}>
+        <h2>Why NextLevel Food?</h2>
+        <p>
+          NextLevel Food is a platform for foodies to share their favorite
+          recipes with the world. It&apos;s a place to discover new dishes, and to
+          connect with other food lovers.
+        </p>
+        <p>
+          NextLevel Food is a place to discover new dishes, and to connect
+          with other food lovers.
+        </p>
+      </section>
+    </main>
   );
 }
