@@ -1,0 +1,53 @@
+.header {
+  gap: 3rem;
+  margin: 5rem auto;
+  width: 90%;
+  max-width: 75rem;
+  color: #ddd6cb;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.highlight {
+  background: linear-gradient(90deg, #f9572a, #ff8a05);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.main {
+  width: 90%;
+  max-width: 40rem;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ddd6cb;
+}
+
+.perks {
+  list-style: none;
+}
+
+.perks li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.perks img {
+  width: 8rem;
+  height: 8rem;
+  object-fit: contain;
+}
+
+.perks p {
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin: 0;
+  color: #ddd6cb;
+}

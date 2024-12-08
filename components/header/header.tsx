@@ -1,28 +1,30 @@
 import Image from "next/image";
 import Link from "next/link";
 import logo from "@/assets/logo.png";
-import styles from "./header.module.css";
+import classes from "./header.module.css";
 import HeaderBackground from "./header-background";
+import NavLink from "./nav-link";
 
 export default function Header() {
   return (
     <>
       <HeaderBackground />
-      <header className={styles.header}>
-        {/* <Image src="/logo-light.png" alt="logo" width={64} height={64} />
-      <h1>Welcome to Big Bear City</h1> */}
-        <Link href="/" className={styles.logo}>
+      <header className={classes.header}>
+        <Link href="/" className={classes.logo}>
           <Image src={logo} alt="logo" priority />
           NextLevel Foodies
         </Link>
-        <nav className={styles.nav}>
+        <nav className={classes.nav}>
           <ul>
-            <li><Link href="/meals">Browse meal</Link></li>
-            {/* <li><Link href="/meals/share">Share a meal</Link></li> */}
-            <li><Link href="/community">Foodies community</Link></li>
+            <li>
+              <NavLink href="/meals">Browse meals</NavLink>
+            </li>
+            <li>
+              <NavLink href="/community">Foodies community</NavLink>
+            </li>
           </ul>
         </nav>
       </header>
     </>
-  )
+  );
 }
