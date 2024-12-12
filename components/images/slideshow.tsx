@@ -22,6 +22,7 @@ const images = [
   { image: tomatoSaladImg, alt: 'A delicious tomato salad' },
 ];
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function shuffle(arr: any[]) {
   return arr
     .map(value => ({ value, sort: Math.random() }))
